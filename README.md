@@ -7,7 +7,7 @@ _Last updated on November 28, 2022_ :contentReference[oaicite:2]{index=2}
 ---
 
 ##  Java Basic Programs
-- [ ] Java Program to Add Two Numbers  
+- [x] Java Program to Add Two Numbers  
 - [ ] Java Program to Check Even or Odd Number  
 - [ ] How to Print Pattern in Java  
 - [ ] Java Program to Add Two Binary Numbers  
