@@ -120,3 +120,47 @@ _Last updated on November 28, 2022_ ([beginnersbook.com](https://beginnersbook.c
 - [ ] 94. Java Decimal to Octal Conversion  
 - [ ] 95. Java Hexadecimal to Decimal Conversion  
 - [ ] 96. Java Decimal to Hexadecimal Conve
+- [ ] 97. Java Binary to Octal Conversion  
+- [ ] 98. Java Decimal to Binary Conversion  
+- [ ] 99. Java Binary to Decimal Conversion  
+- [ ] 100. Java int to char Conversion  
+- [ ] 101. Java char to int Conversion  
+- [ ] 102. Java char to String Conversion and Vice Versa  
+- [ ] 103. Java long to int Conversion  
+- [ ] 104. Java int to long Conversion  
+- [ ] 105. Java int to double Conversion  
+- [ ] 106. Java double to int Conversion  
+- [ ] 107. Java Program to Find ASCII Value of a Character  
+- [ ] 108. Java String to int Conversion  
+- [ ] 109. Java int to String Conversion  
+- [ ] 110. Java String to double Conversion  
+- [ ] 111. Java double to String Conversion  
+- [ ] 112. Java String to long Conversion  
+- [ ] 113. Java long to String Conversion  
+- [ ] 114. Java String to boolean Conversion  
+- [ ] 115. Java boolean to String Conversion  
+- [ ] 116. Java String to float Conversion  
+- [ ] 117. Java float to String Conversion  
+- [ ] 118. Java String to Object Conversion  
+- [ ] 119. Java Object to String Conversion  
+- [ ] 120. Java Date to Timestamp Conversion  
+- [ ] 121. Java Timestamp to Date Conversion  
+- [ ] 122. Java String to Date Conversion  
+- [ ] 123. Java Date to String Conversion  
+
+## Other Java Programs
+- [ ] 124. Java Program to Print Floyd’s Triangle  
+- [ ] 125. Java Program to Print Pascal Triangle  
+- [ ] 126. Java Program to Display Fibonacci Series Using Loops  
+- [ ] 127. Java Program to Find Factorial Using Loops  
+- [ ] 128. Java Program to Make a Calculator Using Switch Case  
+- [ ] 129. Java Program to Calculate Grades of Student  
+- [ ] 130. Java Program to Perform Arithmetic Operation Using Method Overloading  
+- [ ] 131. Java Program to Find Area of Geometric Figures Using Method Overloading  
+
+---
+
+## How to Use
+- Each example has a checkbox — tick it as you complete or study the program.
+- Browse by category or search by number (e.g., "Example 65: Even Numbers").
+- Click the [original source](https://beginnersbook.com/2017/09/java-examples/?utm_source=chatgpt.com) for detailed code and explanation.
