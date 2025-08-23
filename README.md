@@ -1,173 +1,122 @@
 # Java Programming Examples
 
-A curated collection of Java example programs with outputs from BeginnersBook, organized by category. These examples cover a wide range of topics — ideal for beginners to explore control structures, strings, arrays, recursion, mathematics, and more. Each program is linked to the original source for detailed code and explanations.
+A curated collection of Java example programs with outputs from BeginnersBook, organized by category.  
+Each program is numbered sequentially for easy reference, with checkboxes to track progress.
 
-_Last updated on November 28, 2022_ :contentReference[oaicite:2]{index=2}
-
----
-
-##  Java Basic Programs
-- [ ] Java Program to Add Two Numbers  
-- [ ] Java Program to Check Even or Odd Number  
-- [ ] How to Print Pattern in Java  
-- [ ] Java Program to Add Two Binary Numbers  
-- [ ] Java Program to Add Two Complex Numbers  
-- [ ] Java Program to Multiply Two Numbers  
-- [ ] Java Program to Check Leap Year  
-- [ ] Java Program to Check Whether Input Character Is Vowel or Consonant  
-- [ ] Java Program to Calculate Compound Interest  
-- [ ] Java Program to Calculate Simple Interest  
-- [ ] Java Program to Find Quotient and Remainder  
-- [ ] Java Program to Calculate Power of a Number  
-
-##  Java Strings Programs
-- [ ] Java Program to Convert Char to String and String to Char  
-- [ ] Java Program to Find Duplicate Characters in a String  
-- [ ] Java Program to Check Palindrome String using Stack, Queue, For and While Loop  
-- [ ] Java Program to Sort Strings in Alphabetical Order  
-- [ ] Java Program to Reverse Words in a String  
-- [ ] Java Program to Perform Bubble Sort on Strings  
-- [ ] Java Program to Find Occurrence of a Character in a String  
-- [ ] Java Program to Count Vowels and Consonants in a String  
-- [ ] Java Program to Check Two Strings Are Anagram or Not  
-- [ ] Java Program to Divide a String in ‘n’ Equal Parts  
-- [ ] Java Program to Find All Subsets of a String  
-- [ ] Java Program to Find Longest Substring Without Repeating Characters  
-- [ ] Java Program to Find Longest Repeating Sequence in a String  
-- [ ] Java Program to Remove All the White Spaces from a String  
-
-##  Java Arrays Programs
-- [ ] Program to Find Number of Elements in an Array  
-- [ ] Java Program to Calculate Average of Numbers Using Array  
-- [ ] Java Program to Add the Elements of an Array  
-- [ ] Java Program to Reverse an Array  
-- [ ] Java Program to Sort an Array in Ascending Order  
-- [ ] Java Program to Convert Char Array to String  
-- [ ] Java Program to Add Two Matrix Using Multi-dimensional Arrays  
-- [ ] Java Program to Print the Elements of an Array Present on Odd Position  
-- [ ] Java Program to Print the Elements of an Array Present on Even Position  
-- [ ] Java Program to Copy All the Elements of an Array into Another Array  
-- [ ] Java Program to Count the Frequency of Each Element in an Array  
-- [ ] Java Program to Left Rotate the Elements of an Array  
-- [ ] Java Program to Right Rotate the Elements of an Array  
-- [ ] Program to Find Duplicate Elements of an Array  
-- [ ] Program to Find Largest Element of an Array  
-- [ ] Program to Find Smallest Number in an Array  
-- [ ] Program to Remove Duplicate Elements in an Array  
-
-##  Java Recursion Programs
-- [ ] Java Program to Reverse a Number Using For, While Loop and Recursion  
-- [ ] Java Program to Check Palindrome String Using Recursion  
-- [ ] Java Program to Reverse a String Using Recursion  
-- [ ] Java Program to Find Factorial of a Number Using Recursion  
-
-##  Java Programs on Numbers
-- [ ] Java Program to Display First 100 Prime Numbers  
-- [ ] Java Program to Display Alternate Prime Numbers  
-- [ ] Java Program to Display Prime Numbers Between 1 and 100 or 1 and n  
-- [ ] Java Program to Break Integer into Digits  
-- [ ] Java Program to Check Prime Number  
-- [ ] Java Program to Check if a Given Number Is Perfect Square  
-- [ ] Java Program to Find Square Root of a Number Without sqrt Method  
-- [ ] Java Program to Print Armstrong Numbers Between a Given Range  
-- [ ] Java Program to Find Sum of Natural Numbers  
-- [ ] Java Program to Check if a Number Is Positive or Negative  
-- [ ] Java Program to Generate Random Number  
-- [ ] Java Program to Check Armstrong Number  
-- [ ] Java Program to Find GCD of Two Numbers  
-- [ ] Java Program to Find Largest of Three Numbers  
-- [ ] Java Program to Swap Two Numbers Using Bitwise Operator  
-- [ ] Java Program to Find Smallest of Three Numbers Using Ternary Operator  
-- [ ] Java Program to Find Largest of Three Numbers Using Ternary Operator  
-- [ ] Java Program to Display Even Numbers from 1 to n or 1 to 100  
-- [ ] Java Program to Display Odd Numbers from 1 to n or 1 to 100  
-- [ ] Java Program to Find Average of 3 Numbers  
-- [ ] Java Program to Find HCF and LCM of Two Numbers  
-- [ ] Peterson Number in Java  
-- [ ] Sunny Number in Java  
-- [ ] Tech Number in Java  
-- [ ] Emrip Number in Java  
-- [ ] Autobiographical Number in Java  
-- [ ] Spy Number in Java  
-- [ ] Neon Number in Java  
-- [ ] Fascinating Number in Java  
-- [ ] Automorphic Number in Java  
-- [ ] Sphenic Number in Java  
-- [ ] Buzz Number in Java  
-- [ ] Duck Number in Java  
-
-##  Java Input/Output Programs
-- [ ] Java Program to Read Number from Standard Input  
-- [ ] Java Program to Get IP Address  
-- [ ] Java Program to Get Input from User  
-
-##  Java Programs on Geometrical Calculations
-- [ ] Java Program to Calculate Area of Rectangle  
-- [ ] Java Program to Calculate Area of Square  
-- [ ] Java Program to Calculate the Area of Triangle  
-- [ ] Java Program to Calculate Area and Circumference of Circle  
-
-##  Java Sorting/Searching Programs
-- [ ] Java Program for Bubble Sort (Ascending or Descending Order)  
-- [ ] Java Program for Linear Search  
-- [ ] Java Program for Binary Search  
-- [ ] Java Program for Selection Sorting  
-- [ ] Program to Implement Merge Sort in Java  
-
-##  Java Conversion Programs
-- [ ] Java Octal to Decimal Conversion  
-- [ ] Java Decimal to Octal Conversion  
-- [ ] Java Hexadecimal to Decimal Conversion  
-- [ ] Java Decimal to Hexadecimal Conversion  
-- [ ] Java Binary to Octal Conversion  
-- [ ] Java Decimal to Binary Conversion  
-- [ ] Java Binary to Decimal Conversion  
-- [ ] Java int to char Conversion  
-- [ ] Java char to int Conversion  
-- [ ] Java char to String Conversion and Vice Versa  
-- [ ] Java long to int Conversion  
-- [ ] Java int to long Conversion  
-- [ ] Java int to double Conversion  
-- [ ] Java double to int Conversion  
-- [ ] Java Program to Find ASCII Value of a Character  
-- [ ] Java String to int Conversion  
-- [ ] Java int to String Conversion  
-- [ ] Java String to double Conversion  
-- [ ] Java double to String Conversion  
-- [ ] Java String to long Conversion  
-- [ ] Java long to String Conversion  
-- [ ] Java String to boolean Conversion  
-- [ ] Java boolean to String Conversion  
-- [ ] Java String to float Conversion  
-- [ ] Java float to String Conversion  
-- [ ] Java String to Object Conversion  
-- [ ] Java Object to String Conversion  
-- [ ] Java Date to Timestamp Conversion  
-- [ ] Java Timestamp to Date Conversion  
-- [ ] Java String to Date Conversion  
-- [ ] Java Date to String Conversion  
-
-##  Other Java Programs
-- [ ] Java Program to Print Floyd’s Triangle  
-- [ ] Java Program to Print Pascal Triangle  
-- [ ] Java Program to Display Fibonacci Series Using Loops  
-- [ ] Java Program to Find Factorial Using Loops  
-- [ ] Java Program to Make a Calculator Using Switch Case  
-- [ ] Java Program to Calculate Grades of Student  
-- [ ] Java Program to Perform Arithmetic Operation Using Method Overloading  
-- [ ] Java Program to Find Area of Geometric Figures Using Method Overloading  
+_Last updated on November 28, 2022_ ([beginnersbook.com](https://beginnersbook.com/2017/09/java-examples/?utm_source=chatgpt.com))
 
 ---
 
-## How to Use
+## Java Basic Programs
+- [ ] 1. Java Program to Add Two Numbers  
+- [ ] 2. Java Program to Check Even or Odd Number  
+- [ ] 3. How to Print Pattern in Java  
+- [ ] 4. Java Program to Add Two Binary Numbers  
+- [ ] 5. Java Program to Add Two Complex Numbers  
+- [ ] 6. Java Program to Multiply Two Numbers  
+- [ ] 7. Java Program to Check Leap Year  
+- [ ] 8. Java Program to Check Whether Input Character Is Vowel or Consonant  
+- [ ] 9. Java Program to Calculate Compound Interest  
+- [ ] 10. Java Program to Calculate Simple Interest  
+- [ ] 11. Java Program to Find Quotient and Remainder  
+- [ ] 12. Java Program to Calculate Power of a Number  
 
-1. Click on any listed program to open the detailed example and output on BeginnersBook.
-2. Copy the code snippet and run it in your Java development environment for hands-on learning.
-3. Explore different categories progressively to strengthen your understanding — from basics to advanced concepts.
-4. Feel free to contribute! Suggest new examples or advanced variants to expand this collection.
+## Java Strings Programs
+- [ ] 13. Java Program to Convert Char to String and String to Char  
+- [ ] 14. Java Program to Find Duplicate Characters in a String  
+- [ ] 15. Java Program to Check Palindrome String using Stack, Queue, For and While Loop  
+- [ ] 16. Java Program to Sort Strings in Alphabetical Order  
+- [ ] 17. Java Program to Reverse Words in a String  
+- [ ] 18. Java Program to Perform Bubble Sort on Strings  
+- [ ] 19. Java Program to Find Occurrence of a Character in a String  
+- [ ] 20. Java Program to Count Vowels and Consonants in a String  
+- [ ] 21. Java Program to Check Two Strings Are Anagram or Not  
+- [ ] 22. Java Program to Divide a String in ‘n’ Equal Parts  
+- [ ] 23. Java Program to Find All Subsets of a String  
+- [ ] 24. Java Program to Find Longest Substring Without Repeating Characters  
+- [ ] 25. Java Program to Find Longest Repeating Sequence in a String  
+- [ ] 26. Java Program to Remove All the White Spaces from a String  
 
----
+## Java Arrays Programs
+- [ ] 27. Program to Find Number of Elements in an Array  
+- [ ] 28. Java Program to Calculate Average of Numbers Using Array  
+- [ ] 29. Java Program to Add the Elements of an Array  
+- [ ] 30. Java Program to Reverse an Array  
+- [ ] 31. Java Program to Sort an Array in Ascending Order  
+- [ ] 32. Java Program to Convert Char Array to String  
+- [ ] 33. Java Program to Add Two Matrix Using Multi-dimensional Arrays  
+- [ ] 34. Java Program to Print the Elements of an Array Present on Odd Position  
+- [ ] 35. Java Program to Print the Elements of an Array Present on Even Position  
+- [ ] 36. Java Program to Copy All the Elements of an Array into Another Array  
+- [ ] 37. Java Program to Count the Frequency of Each Element in an Array  
+- [ ] 38. Java Program to Left Rotate the Elements of an Array  
+- [ ] 39. Java Program to Right Rotate the Elements of an Array  
+- [ ] 40. Program to Find Duplicate Elements of an Array  
+- [ ] 41. Program to Find Largest Element of an Array  
+- [ ] 42. Program to Find Smallest Number in an Array  
+- [ ] 43. Program to Remove Duplicate Elements in an Array  
 
-**Enjoy practicing Java and happy coding!**
+## Java Recursion Programs
+- [ ] 44. Java Program to Reverse a Number Using For, While Loop and Recursion  
+- [ ] 45. Java Program to Check Palindrome String Using Recursion  
+- [ ] 46. Java Program to Reverse a String Using Recursion  
+- [ ] 47. Java Program to Find Factorial of a Number Using Recursion  
 
----
+## Java Programs on Numbers
+- [ ] 48. Java Program to Display First 100 Prime Numbers  
+- [ ] 49. Java Program to Display Alternate Prime Numbers  
+- [ ] 50. Java Program to Display Prime Numbers Between 1 and 100 or 1 and n  
+- [ ] 51. Java Program to Break Integer into Digits  
+- [ ] 52. Java Program to Check Prime Number  
+- [ ] 53. Java Program to Check if a Given Number Is Perfect Square  
+- [ ] 54. Java Program to Find Square Root of a Number Without sqrt Method  
+- [ ] 55. Java Program to Print Armstrong Numbers Between a Given Range  
+- [ ] 56. Java Program to Find Sum of Natural Numbers  
+- [ ] 57. Java Program to Check if a Number Is Positive or Negative  
+- [ ] 58. Java Program to Generate Random Number  
+- [ ] 59. Java Program to Check Armstrong Number  
+- [ ] 60. Java Program to Find GCD of Two Numbers  
+- [ ] 61. Java Program to Find Largest of Three Numbers  
+- [ ] 62. Java Program to Swap Two Numbers Using Bitwise Operator  
+- [ ] 63. Java Program to Find Smallest of Three Numbers Using Ternary Operator  
+- [ ] 64. Java Program to Find Largest of Three Numbers Using Ternary Operator  
+- [ ] 65. Java Program to Display Even Numbers from 1 to n or 1 to 100  
+- [ ] 66. Java Program to Display Odd Numbers from 1 to n or 1 to 100  
+- [ ] 67. Java Program to Find Average of 3 Numbers  
+- [ ] 68. Java Program to Find HCF and LCM of Two Numbers  
+- [ ] 69. Peterson Number in Java  
+- [ ] 70. Sunny Number in Java  
+- [ ] 71. Tech Number in Java  
+- [ ] 72. Emrip Number in Java  
+- [ ] 73. Autobiographical Number in Java  
+- [ ] 74. Spy Number in Java  
+- [ ] 75. Neon Number in Java  
+- [ ] 76. Fascinating Number in Java  
+- [ ] 77. Automorphic Number in Java  
+- [ ] 78. Sphenic Number in Java  
+- [ ] 79. Buzz Number in Java  
+- [ ] 80. Duck Number in Java  
+
+## Java Input/Output Programs
+- [ ] 81. Java Program to Read Number from Standard Input  
+- [ ] 82. Java Program to Get IP Address  
+- [ ] 83. Java Program to Get Input from User  
+
+## Java Programs on Geometrical Calculations
+- [ ] 84. Java Program to Calculate Area of Rectangle  
+- [ ] 85. Java Program to Calculate Area of Square  
+- [ ] 86. Java Program to Calculate the Area of Triangle  
+- [ ] 87. Java Program to Calculate Area and Circumference of Circle  
+
+## Java Sorting/Searching Programs
+- [ ] 88. Java Program for Bubble Sort (Ascending or Descending Order)  
+- [ ] 89. Java Program for Linear Search  
+- [ ] 90. Java Program for Binary Search  
+- [ ] 91. Java Program for Selection Sorting  
+- [ ] 92. Program to Implement Merge Sort in Java  
+
+## Java Conversion Programs
+- [ ] 93. Java Octal to Decimal Conversion  
+- [ ] 94. Java Decimal to Octal Conversion  
+- [ ] 95. Java Hexadecimal to Decimal Conversion  
+- [ ] 96. Java Decimal to Hexadecimal Conve
