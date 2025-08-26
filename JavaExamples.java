@@ -30,9 +30,9 @@ public class JavaExamples {
                         System.out.print("Enter an integer to check even/odd:");
                         int n = sc.nextInt();
                         if (n % 2 == 0) {
-                            System.out.print(n + "Is even.\n");
+                            System.out.print(n + " Is even.\n");
                         } else {
-                            System.out.print(n + "Is Old.\n");
+                            System.out.print(n + " Is Old.\n");
                         }
                         break;                    
                             
