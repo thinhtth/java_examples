@@ -9,6 +9,7 @@ public class JavaExamples {
                 System.out.println("0.Exit");
                 System.out.println("1.Add Two Numbers");
                 System.out.println("2.Check Even or Add Number");
+                System.out.println("3.Print Pattem");
                 System.out.print("please choose what you want:");
                 int choice = readInt(sc);
 
@@ -35,6 +36,17 @@ public class JavaExamples {
                         }
                         break;
 
+                    }
+                    case 3: {// Print Pattem
+                        System.out.print("Enter the number of lines you want to print:");
+                        int rows = readInt(sc);
+                        for (int i = 1; i <= rows; i++) {
+                            for (int j = 1; j <= i; j++){
+                                System.out.print("* ");
+                            }
+                            System.out.println();
+                        }
+                        break;
                     }
                     default:
                         System.out.println("This option is not available.Try again!\n");
