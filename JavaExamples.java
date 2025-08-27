@@ -49,7 +49,7 @@ public class JavaExamples {
                         break;
 
                     default:
-                        System.out.println("This option is not available.Try again!\n");
+                        System.out.println("This option is not available.Try again!");
                         break;
                 }
 
