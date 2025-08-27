@@ -6,39 +6,39 @@ public class JavaExamples {
         try (Scanner sc = new Scanner(System.in)) {
             do {
                 System.out.println("=====MENU=====");
-                System.out.println("0.Exit");
-                System.out.println("1.Add Two Numbers");
-                System.out.println("2.Check Even or Add Number");
-                System.out.println("3.Print Pattem");
-                System.out.print("please choose what you want:");
+                System.out.println("0. Exit");
+                System.out.println("1. Add Two Numbers");
+                System.out.println("2. Check Even or Add Number");
+                System.out.println("3. Print Pattern");
+                System.out.println("Please choose what you want:");
                 int choice = readInt(sc);
 
                 switch (choice) {
                     case 0:
                         System.out.println("Goodbye");
                         return;
+                        
                     case 1: // Add Two Numbers
-                        System.out.print("Enter the first numbert: ");
+                        System.out.println("Enter the first numbert: ");
                         int a = readInt(sc);
-                        System.out.print("Enter the second number: ");
+                        System.out.println("Enter the second number: ");
                         int b = readInt(sc);
                         int sum = a + b;
                         System.out.println("Total = " + sum + "\n");
                         break;
 
-                    case 2: {// Check Even or Odd Number
-                        System.out.print("Enter an integer to check even/odd:");
+                    case 2: // Check Even or Odd Number
+                        System.out.println("Enter an integer to check even/odd:");
                         int n = readInt(sc);
                         if (n % 2 == 0) {
-                            System.out.print(n + " Is even.\n");
+                            System.out.println(n + " Is even.\n");
                         } else {
-                            System.out.print(n + " Is Old.\n");
+                            System.out.println(n + " Is Old.\n");
                         }
                         break;
 
-                    }
-                    case 3: {// Print Pattem
-                        System.out.print("Enter the number of lines you want to print:");
+                    case 3: // Print Pattern
+                        System.out.println("Enter the number of lines you want to print:");
                         int rows = readInt(sc);
                         for (int i = 1; i <= rows; i++) {
                             for (int j = 1; j <= i; j++){
@@ -47,7 +47,7 @@ public class JavaExamples {
                             System.out.println();
                         }
                         break;
-                    }
+
                     default:
                         System.out.println("This option is not available.Try again!\n");
                         break;
