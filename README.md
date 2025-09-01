@@ -11,7 +11,7 @@ _Last updated on November 28, 2022_ ([beginnersbook.com](https://beginnersbook.c
 ##  Java Basic Programs
 - [x] Java Program to Add Two Numbers  
 - [x] Java Program to Check Even or Odd Number  
-- [ ] How to Print Pattern in Java  
+- [x] How to Print Pattern in Java  
 - [ ] Java Program to Add Two Binary Numbers  
 - [ ] Java Program to Add Two Complex Numbers  
 - [ ] Java Program to Multiply Two Numbers  

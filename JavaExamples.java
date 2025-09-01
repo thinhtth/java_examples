@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.math.BigInteger;
 
 public class JavaExamples {
 
@@ -10,6 +11,7 @@ public class JavaExamples {
                 System.out.println("1.Add Two Numbers");
                 System.out.println("2.Check Even or Add Number");
                 System.out.println("3.Print Pattem");
+                System.out.println("4.Add Two Binary Numbers");
                 System.out.print("please choose what you want:");
                 int choice = readInt(sc);
 
@@ -48,12 +50,27 @@ public class JavaExamples {
                         }
                         break;
                     }
+                    case 4: {// Add Two Binary Numbers 
+                        System.out.print("Enter the first binary number: ");
+                        String b1 = sc.next();
+                        System.out.print("Enter the second binary number: ");
+                        String b2 = sc.next();
+
+                        BigInteger bin1 = new BigInteger(b1, 2);
+                        BigInteger bin2 = new BigInteger(b2, 2);
+
+                        BigInteger Sum = bin1.add(bin2);
+                        System.out.println("Result (binary): " + Sum.toString(2));
+                        break;
+                         }
+                        
+
                     default:
                         System.out.println("This option is not available.Try again!\n");
                         break;
                 }
-
             } while (true);
+
         }
     }
 
