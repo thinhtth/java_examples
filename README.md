@@ -7,12 +7,11 @@ _Last updated on November 28, 2022_ ([beginnersbook.com](https://beginnersbook.c
 
 ---
 
-<<<<<<< HEAD
 ##  Java Basic Programs
 - [x] Java Program to Add Two Numbers  
 - [x] Java Program to Check Even or Odd Number  
 - [x] How to Print Pattern in Java  
-- [ ] Java Program to Add Two Binary Numbers  
+- [x] Java Program to Add Two Binary Numbers  
 - [ ] Java Program to Add Two Complex Numbers  
 - [ ] Java Program to Multiply Two Numbers  
 - [ ] Java Program to Check Leap Year  
@@ -21,21 +20,6 @@ _Last updated on November 28, 2022_ ([beginnersbook.com](https://beginnersbook.c
 - [ ] Java Program to Calculate Simple Interest  
 - [ ] Java Program to Find Quotient and Remainder  
 - [ ] Java Program to Calculate Power of a Number  
-=======
-## Java Basic Programs
-- [ ] 1. Java Program to Add Two Numbers  
-- [ ] 2. Java Program to Check Even or Odd Number  
-- [ ] 3. How to Print Pattern in Java  
-- [ ] 4. Java Program to Add Two Binary Numbers  
-- [ ] 5. Java Program to Add Two Complex Numbers  
-- [ ] 6. Java Program to Multiply Two Numbers  
-- [ ] 7. Java Program to Check Leap Year  
-- [ ] 8. Java Program to Check Whether Input Character Is Vowel or Consonant  
-- [ ] 9. Java Program to Calculate Compound Interest  
-- [ ] 10. Java Program to Calculate Simple Interest  
-- [ ] 11. Java Program to Find Quotient and Remainder  
-- [ ] 12. Java Program to Calculate Power of a Number  
->>>>>>> a7fe80458ef45128806296b873fb1c5e85b9cda2
 
 ## Java Strings Programs
 - [ ] 13. Java Program to Convert Char to String and String to Char  

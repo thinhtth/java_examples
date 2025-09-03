@@ -12,6 +12,7 @@ public class JavaExamples {
                 System.out.println("2.Check Even or Add Number");
                 System.out.println("3.Print Pattem");
                 System.out.println("4.Add Two Binary Numbers");
+                System.out.println("5.Add Two Complex Numbers");
                 System.out.print("please choose what you want:");
                 int choice = readInt(sc);
 
@@ -63,6 +64,23 @@ public class JavaExamples {
                         System.out.println("Result (binary): " + Sum.toString(2));
                         break;
                          }
+                    case 5:{// Add Two Complex Numbers 
+                        System.out.print("Enter real part of first complex number: ");
+                        double r1 = sc.nextDouble();
+                        System.out.print("Enter imaginary part of first complex number: ");
+                        double i1 = sc.nextDouble();    
+                        
+                        System.out.print("Enter real part of second complex number: ");
+                        double r2 = sc.nextDouble();
+                        System.out.print("Enter imaginary part of second complex number: ");
+                        double i2 = sc.nextDouble();
+                    
+                        double realSum = r1 + r2;
+                        double imagSum = i1 + i2;
+                        
+                        System.out.print("Result: (" + realSum + ") + (" + imagSum +")i");
+                        break;
+                    }
                         
 
                     default:
