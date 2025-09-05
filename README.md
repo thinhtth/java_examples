@@ -12,8 +12,8 @@ _Last updated on November 28, 2022_ ([beginnersbook.com](https://beginnersbook.c
 - [x] Java Program to Check Even or Odd Number  
 - [x] How to Print Pattern in Java  
 - [x] Java Program to Add Two Binary Numbers  
-- [ ] Java Program to Add Two Complex Numbers  
-- [ ] Java Program to Multiply Two Numbers  
+- [x] Java Program to Add Two Complex Numbers  
+- [x] Java Program to Multiply Two Numbers  
 - [ ] Java Program to Check Leap Year  
 - [ ] Java Program to Check Whether Input Character Is Vowel or Consonant  
 - [ ] Java Program to Calculate Compound Interest  

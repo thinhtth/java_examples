@@ -13,6 +13,7 @@ public class JavaExamples {
                 System.out.println("3.Print Pattem");
                 System.out.println("4.Add Two Binary Numbers");
                 System.out.println("5.Add Two Complex Numbers");
+                System.out.println("6.multiply Two Numbers");
                 System.out.print("please choose what you want:");
                 int choice = readInt(sc);
 
@@ -81,7 +82,15 @@ public class JavaExamples {
                         System.out.print("Result: (" + realSum + ") + (" + imagSum +")i");
                         break;
                     }
-                        
+                    case 6:{ // Multiply Two Numbers 
+                        System.out.print("Enter the first numbers:");
+                        int m1 = readInt(sc);
+                        System.out.print("Enter the second numbers:");
+                        int m2 = readInt(sc);
+                        int X  = m1 * m2;
+                        System.out.println(" X = " + X + "\n " );
+                        break;    
+                    }    
 
                     default:
                         System.out.println("This option is not available.Try again!\n");
