@@ -25,9 +25,7 @@ public class JavaExamples {
                         System.out.print("Enter the first numbert: ");
                         int a = readInt(sc);
                         System.out.print("Enter the second number: ");
-                        int b = readInt(sc);
-                        int sum = a + b;
-                        System.out.println("Total = " + sum + "\n");
+                        System.out.println("Total = " + (a + readInt(sc)) + "\n");
                         break;
 
                     case 2: {// Check Even or Odd Number
@@ -54,16 +52,14 @@ public class JavaExamples {
                     }
                     case 4: {// Add Two Binary Numbers 
                         System.out.print("Enter the first binary number: ");
-                        String b1 = sc.next();
+                        BigInteger bin1 = new BigInteger(sc.next(), 2);
+                        
                         System.out.print("Enter the second binary number: ");
-                        String b2 = sc.next();
+                        BigInteger bin2 = new BigInteger(sc.next(), 2);  
 
-                        BigInteger bin1 = new BigInteger(b1, 2);
-                        BigInteger bin2 = new BigInteger(b2, 2);
-
-                        BigInteger Sum = bin1.add(bin2);
-                        System.out.println("Result (binary): " + Sum.toString(2));
-                        break;
+                        BigInteger sum = bin1.add(bin2);
+                        System.out.println("Result (binary): " + sum.toString(2));
+                        break;// cần thêm phần giúp user cần nhập nhị phân
                          }
                     case 5:{// Add Two Complex Numbers 
                         System.out.print("Enter real part of first complex number: ");
@@ -101,7 +97,6 @@ public class JavaExamples {
         }
     }
 
-
     private static int readInt(Scanner sc) {
         while (!sc.hasNextInt()) {
             System.out.print("You have entered an incorrect number. Please enter an integer: ");
@@ -110,3 +105,4 @@ public class JavaExamples {
         return sc.nextInt();
     }
 }
+// rút gọn lại và coi lại phần case4
