@@ -14,6 +14,7 @@ public class JavaExamples {
                 System.out.println("4.Add Two Binary Numbers");
                 System.out.println("5.Add Two Complex Numbers");
                 System.out.println("6.multiply Two Numbers");
+                System.out.println("7.Check Leap Year");
                 System.out.print("please choose what you want:");
                 int choice = readInt(sc);
 
@@ -87,6 +88,20 @@ public class JavaExamples {
                         System.out.println(" X = " + X + "\n " );
                         break;    
                     }    
+                    case 7:{ // Check Leap Year 
+                        System.out.print("Enter a year to check:");
+                        int year = sc.nextInt();
+                        boolean Leap = false; 
+                        if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)){
+                            Leap = true ;
+                        }
+                        if (Leap){
+                            System.out.println(year + " is a leap year.");
+                        }else {
+                            System.out.println(year + " not a leap year.");
+                        }
+                        break;
+                    }
 
                     default:
                         System.out.println("This option is not available.Try again!\n");
