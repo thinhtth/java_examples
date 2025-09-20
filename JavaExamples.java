@@ -60,7 +60,7 @@ public class JavaExamples {
 
                         BigInteger sum = bin1.add(bin2);
                         System.out.println("Result (binary): " + sum.toString(2));
-                        break;// cần thêm phần giúp user cần nhập nhị phân
+                        break; // cần thêm phần giúp user cần nhập nhị phân
                          }
                     case 5:{// Add Two Complex Numbers 
                         System.out.print("Enter real part of first complex number: ");
@@ -91,11 +91,8 @@ public class JavaExamples {
                     case 7:{ // Check Leap Year 
                         System.out.print("Enter a year to check:");
                         int year = sc.nextInt();
-                        boolean Leap = false; 
-                        if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)){
-                            Leap = true ;
-                        }
-                        if (Leap){
+                        boolean isLeapYear = (year % 400 == 0) || (year % 4 == 0 && year % 100 != 0);
+                        if (isLeapYear){
                             System.out.println(year + " is a leap year.");
                         }else {
                             System.out.println(year + " not a leap year.");
