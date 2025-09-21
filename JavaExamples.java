@@ -53,29 +53,36 @@ public class JavaExamples {
                     }
                     case 4: {// Add Two Binary Numbers 
                         System.out.print("Enter the first binary number: ");
-                        BigInteger bin1 = new BigInteger(sc.next(), 2);
-                        
+                        String b1 = sc.next();
+                        while (!b1.matches("[01]+")){
+                            System.out.print("Invalid! Please enter again (only enter 1 or 0): ");
+                            b1 = sc.next();
+                        }
                         System.out.print("Enter the second binary number: ");
-                        BigInteger bin2 = new BigInteger(sc.next(), 2);  
-
+                        String b2 = sc.next();
+                        while (!b2.matches("[01]+")){
+                            System.out.println("Invalid! Please enter again (only enter 1 or 0): ");
+                            b2 = sc.next();
+                        }
+                        BigInteger bin1 = new BigInteger(b1,2);
+                        BigInteger bin2 = new BigInteger(b2,2);
                         BigInteger sum = bin1.add(bin2);
                         System.out.println("Result (binary): " + sum.toString(2));
-                        break;// cần thêm phần giúp user cần nhập nhị phân
+                        break;
+                        
+
                          }
                     case 5:{// Add Two Complex Numbers 
-                        System.out.print("Enter real part of first complex number: ");
+                        System.out.print("Enter first complex number (real imaginary): ");
                         double r1 = sc.nextDouble();
-                        System.out.print("Enter imaginary part of first complex number: ");
                         double i1 = sc.nextDouble();    
-                        
-                        System.out.print("Enter real part of second complex number: ");
+                                               
+                        System.out.print("Enter second complex number (real imaginary): ");
                         double r2 = sc.nextDouble();
-                        System.out.print("Enter imaginary part of second complex number: ");
                         double i2 = sc.nextDouble();
-                    
+
                         double realSum = r1 + r2;
                         double imagSum = i1 + i2;
-                        
                         System.out.print("Result: (" + realSum + ") + (" + imagSum +")i");
                         break;
                     }
@@ -120,4 +127,3 @@ public class JavaExamples {
         return sc.nextInt();
     }
 }
-// rút gọn lại và coi lại phần case4
