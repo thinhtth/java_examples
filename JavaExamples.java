@@ -23,15 +23,13 @@ public class JavaExamples {
                         System.out.println("Goodbye");
                         return;
                     case 1: // Add Two Numbers
-                        System.out.print("Enter the first numbert: ");
-                        int a = readInt(sc);
-                        System.out.print("Enter the second number: ");
-                        System.out.println("Total = " + (a + readInt(sc)) + "\n");
+                        int a = readInt(sc, "Enter the first numbert: ");
+                        int b = readInt(sc, "Enter the second number: ");
+                        System.out.println("Total = " + (a + b) + "\n");
                         break;
 
                     case 2: {// Check Even or Odd Number
-                        System.out.print("Enter an integer to check even/odd:");
-                        int n = readInt(sc);
+                        int n = readInt(sc, "Enter an integer to check even/odd:");
                         if (n % 2 == 0) {
                             System.out.print(n + " Is even.\n");
                         } else {
@@ -41,8 +39,7 @@ public class JavaExamples {
 
                     }
                     case 3: {// Print Pattem
-                        System.out.print("Enter the number of lines you want to print:");
-                        int rows = readInt(sc);
+                        int rows = readInt(sc, "Enter the number of lines you want to print:");
                         for (int i = 1; i <= rows; i++) {
                             for (int j = 1; j <= i; j++){
                                 System.out.print("* ");
@@ -52,16 +49,11 @@ public class JavaExamples {
                         break;
                     }
                     case 4: {// Add Two Binary Numbers 
-                        System.out.print("Enter the first binary number: ");
-                        BigInteger bin1 = new BigInteger(sc.next(), 2);
-                        
-                        System.out.print("Enter the second binary number: ");
-                        BigInteger bin2 = new BigInteger(sc.next(), 2);  
-
-                        BigInteger sum = bin1.add(bin2);
-                        System.out.println("Result (binary): " + sum.toString(2));
-                        break; // cần thêm phần giúp user cần nhập nhị phân
-                         }
+                        int bin1 = readBinaryNumber(sc, "Enter the first binary number: ");
+                        int bin2 = readBinaryNumber(sc, "Enter the second binary number: ");
+                        System.out.println("Result (binary): " + (bin1 + bin2));
+                        break;
+                    }
                     case 5:{// Add Two Complex Numbers 
                         System.out.print("Enter real part of first complex number: ");
                         double r1 = sc.nextDouble();
@@ -109,12 +101,21 @@ public class JavaExamples {
         }
     }
 
-    private static int readInt(Scanner sc) {
+    private static int readInt(Scanner sc, String message) {
+        System.out.println(message);
         while (!sc.hasNextInt()) {
             System.out.print("You have entered an incorrect number. Please enter an integer: ");
             sc.next(); 
         }
         return sc.nextInt();
     }
+
+    private static int readBinaryNumber(Scanner sc, String message) {
+        System.out.println(message);
+        while (!sc.hasNext("[01]+")) {
+            System.out.print("You have entered an incorrect number. Please enter an binary number: ");
+            sc.next(); 
+        }
+        return Integer.parseInt(sc.next(), 2);
+    }
 }
-// rút gọn lại và coi lại phần case4
