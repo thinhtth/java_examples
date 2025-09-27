@@ -1,10 +1,15 @@
 import java.util.Scanner;
+import java.util.ArrayList;
 
 public class JavaExamples {
-
+    private static final String filePath = "user-actions.txt";
+    private static final ArrayList<String> actions = new ArrayList<String>();
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
             do {
+                String content = FileService.read(filePath);
+                System.out.println(content);
+                
                 System.out.println("=====MENU=====");
                 System.out.println("0.Exit");
                 System.out.println("1.Add Two Numbers");
@@ -14,27 +19,32 @@ public class JavaExamples {
                 System.out.println("5.Add Two Complex Numbers");
                 System.out.println("6.multiply Two Numbers");
                 System.out.println("7.Check Leap Year");
+
                 int choice = readInt(sc, "please choose what you want:");
+
 
                 switch (choice) {
                     case 0:
                         System.out.println("Goodbye");
+                        actions.forEach(System.out::println);
+                        FileService.write(filePath, String.join(System.lineSeparator(), actions));
                         return;
                     case 1: // Add Two Numbers
                         int a = readInt(sc, "Enter the first numbert: ");
                         int b = readInt(sc, "Enter the second number: ");
                         System.out.println("Total = " + (a + b) + "\n");
+                        storeUserAction("Added " + a + " and " + b + " to get " + (a + b));
                         break;
-
                     case 2: {// Check Even or Odd Number
                         int n = readInt(sc, "Enter an integer to check even/odd:");
-                        if (n % 2 == 0) {
+                        boolean isEven = (n % 2 == 0);
+                        if (isEven) {
                             System.out.print(n + " Is even.\n");
                         } else {
                             System.out.print(n + " Is Old.\n");
                         }
+                        storeUserAction("Checked " + n + " is " + (isEven ? "even" : "odd"));
                         break;
-
                     }
                     case 3: {// Print Pattem
                         int rows = readInt(sc, "Enter the number of lines you want to print:");
@@ -44,6 +54,7 @@ public class JavaExamples {
                             }
                             System.out.println();
                         }
+                        storeUserAction("Printed a pattern with " + rows + " rows");
                         break;
                     }
                     case 4: {// Add Two Binary Numbers 
@@ -53,18 +64,19 @@ public class JavaExamples {
                         System.out.println("Result (binary): " + Integer.toBinaryString(sum));
                         break;
                     }
-                    case 5:{// Add Two Complex Numbers 
+                    case 5:{// Add Two Complex Numbers // ràng buộc bắt nhập đúng số 
                         System.out.print("Enter first complex number (real imaginary): ");
-                        double r1 = sc.nextDouble();
-                        double i1 = sc.nextDouble();    
+                        double r1 = readDouble(sc, "real part: ");
+                        double i1 = readDouble(sc, "imaginary part: ");
                                                
                         System.out.print("Enter second complex number (real imaginary): ");
-                        double r2 = sc.nextDouble();
-                        double i2 = sc.nextDouble();
+                        double r2 = readDouble(sc, "real part: ");
+                        double i2 = readDouble(sc, "imaginary part: ");
 
                         double realSum = r1 + r2;
                         double imagSum = i1 + i2;
-                        System.out.print("Result: (" + realSum + ") + (" + imagSum +")i");
+                        System.out.println("Result: (" + realSum + ") + (" + imagSum +")i");
+                        storeUserAction("Added two complex numbers: (" + r1 + " + " + i1 + "i) and (" + r2 + " + " + i2 + "i) to get (" + realSum + " + " + imagSum + "i)");
                         break;
                     }
                     case 6:{ // Multiply Two Numbers 
@@ -72,9 +84,10 @@ public class JavaExamples {
                         int m2 = readInt(sc, "Enter the second numbers:");
                         int X  = m1 * m2;
                         System.out.println(" X = " + X + "\n " );
+                        storeUserAction("Multiplied " + m1 + " and " + m2 + " to get " + X);
                         break;    
                     }    
-                    case 7:{ // Check Leap Year 
+                    case 7:{ // Check Leap Year // ràng buộc bắt nhập đúng số
                         System.out.print("Enter a year to check:");
                         int year = sc.nextInt();
                         boolean isLeapYear = (year % 400 == 0) || (year % 4 == 0 && year % 100 != 0);
@@ -83,9 +96,9 @@ public class JavaExamples {
                         }else {
                             System.out.println(year + " not a leap year.");
                         }
+                        storeUserAction("Checked " + year + " is " + (isLeapYear ? "a leap year" : "not a leap year"));
                         break;
                     }
-
                     default:
                         System.out.println("This option is not available.Try again!\n");
                         break;
@@ -103,7 +116,7 @@ public class JavaExamples {
         }
         return sc.nextInt();
     }
-
+    
     private static int readBinaryNumber(Scanner sc, String message) {
         System.out.println(message);
         while (!sc.hasNext("[01]+")) {
@@ -111,5 +124,17 @@ public class JavaExamples {
             sc.next(); 
         }
         return Integer.parseInt(sc.next(), 2);
+    }
+    private static void storeUserAction(String message) {
+        actions.add(actions.size() + 1 + ". " + message);
+    }
+
+    private static double readDouble(Scanner sc, String message) {
+        System.out.println(message);
+        while (!sc.hasNextDouble()) {
+            System.out.print("You have entered an incorrect number. Please enter a decimal number: ");
+            sc.next();
+        }
+        return sc.nextDouble();
     }
 }
