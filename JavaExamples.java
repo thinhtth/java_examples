@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.math.BigInteger;
 
 public class JavaExamples {
 
@@ -15,23 +14,20 @@ public class JavaExamples {
                 System.out.println("5.Add Two Complex Numbers");
                 System.out.println("6.multiply Two Numbers");
                 System.out.println("7.Check Leap Year");
-                System.out.print("please choose what you want:");
-                int choice = readInt(sc);
+                int choice = readInt(sc, "please choose what you want:");
 
                 switch (choice) {
                     case 0:
                         System.out.println("Goodbye");
                         return;
                     case 1: // Add Two Numbers
-                        System.out.print("Enter the first numbert: ");
-                        int a = readInt(sc);
-                        System.out.print("Enter the second number: ");
-                        System.out.println("Total = " + (a + readInt(sc)) + "\n");
+                        int a = readInt(sc, "Enter the first numbert: ");
+                        int b = readInt(sc, "Enter the second number: ");
+                        System.out.println("Total = " + (a + b) + "\n");
                         break;
 
                     case 2: {// Check Even or Odd Number
-                        System.out.print("Enter an integer to check even/odd:");
-                        int n = readInt(sc);
+                        int n = readInt(sc, "Enter an integer to check even/odd:");
                         if (n % 2 == 0) {
                             System.out.print(n + " Is even.\n");
                         } else {
@@ -41,8 +37,7 @@ public class JavaExamples {
 
                     }
                     case 3: {// Print Pattem
-                        System.out.print("Enter the number of lines you want to print:");
-                        int rows = readInt(sc);
+                        int rows = readInt(sc, "Enter the number of lines you want to print:");
                         for (int i = 1; i <= rows; i++) {
                             for (int j = 1; j <= i; j++){
                                 System.out.print("* ");
@@ -52,26 +47,12 @@ public class JavaExamples {
                         break;
                     }
                     case 4: {// Add Two Binary Numbers 
-                        System.out.print("Enter the first binary number: ");
-                        String b1 = sc.next();
-                        while (!b1.matches("[01]+")){
-                            System.out.print("Invalid! Please enter again (only enter 1 or 0): ");
-                            b1 = sc.next();
-                        }
-                        System.out.print("Enter the second binary number: ");
-                        String b2 = sc.next();
-                        while (!b2.matches("[01]+")){
-                            System.out.println("Invalid! Please enter again (only enter 1 or 0): ");
-                            b2 = sc.next();
-                        }
-                        BigInteger bin1 = new BigInteger(b1,2);
-                        BigInteger bin2 = new BigInteger(b2,2);
-                        BigInteger sum = bin1.add(bin2);
-                        System.out.println("Result (binary): " + sum.toString(2));
+                        int bin1 = readBinaryNumber(sc, "Enter the first binary number: ");
+                        int bin2 = readBinaryNumber(sc, "Enter the second binary number: ");
+                        int sum = bin1 + bin2;
+                        System.out.println("Result (binary): " + Integer.toBinaryString(sum));
                         break;
-                        
-
-                         }
+                    }
                     case 5:{// Add Two Complex Numbers 
                         System.out.print("Enter first complex number (real imaginary): ");
                         double r1 = sc.nextDouble();
@@ -87,10 +68,8 @@ public class JavaExamples {
                         break;
                     }
                     case 6:{ // Multiply Two Numbers 
-                        System.out.print("Enter the first numbers:");
-                        int m1 = readInt(sc);
-                        System.out.print("Enter the second numbers:");
-                        int m2 = readInt(sc);
+                        int m1 = readInt(sc, "Enter the first numbers:");
+                        int m2 = readInt(sc, "Enter the second numbers:");
                         int X  = m1 * m2;
                         System.out.println(" X = " + X + "\n " );
                         break;    
@@ -98,11 +77,8 @@ public class JavaExamples {
                     case 7:{ // Check Leap Year 
                         System.out.print("Enter a year to check:");
                         int year = sc.nextInt();
-                        boolean Leap = false; 
-                        if ((year % 400 == 0) || (year % 4 == 0 && year % 100 != 0)){
-                            Leap = true ;
-                        }
-                        if (Leap){
+                        boolean isLeapYear = (year % 400 == 0) || (year % 4 == 0 && year % 100 != 0);
+                        if (isLeapYear){
                             System.out.println(year + " is a leap year.");
                         }else {
                             System.out.println(year + " not a leap year.");
@@ -119,11 +95,21 @@ public class JavaExamples {
         }
     }
 
-    private static int readInt(Scanner sc) {
+    private static int readInt(Scanner sc, String message) {
+        System.out.println(message);
         while (!sc.hasNextInt()) {
             System.out.print("You have entered an incorrect number. Please enter an integer: ");
             sc.next(); 
         }
         return sc.nextInt();
+    }
+
+    private static int readBinaryNumber(Scanner sc, String message) {
+        System.out.println(message);
+        while (!sc.hasNext("[01]+")) {
+            System.out.print("You have entered an incorrect number. Please enter an binary number: ");
+            sc.next(); 
+        }
+        return Integer.parseInt(sc.next(), 2);
     }
 }
