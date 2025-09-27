@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.sql.Date;
+import java.time.Instant;
 import java.util.ArrayList;
 
 public class JavaExamples {
@@ -22,12 +24,11 @@ public class JavaExamples {
 
                 int choice = readInt(sc, "please choose what you want:");
 
-
                 switch (choice) {
                     case 0:
                         System.out.println("Goodbye");
                         actions.forEach(System.out::println);
-                        FileService.write(filePath, String.join(System.lineSeparator(), actions));
+                        FileService.append(filePath, System.lineSeparator() + String.join(System.lineSeparator(), actions));
                         return;
                     case 1: // Add Two Numbers
                         int a = readInt(sc, "Enter the first numbert: ");
@@ -126,7 +127,7 @@ public class JavaExamples {
         return Integer.parseInt(sc.next(), 2);
     }
     private static void storeUserAction(String message) {
-        actions.add(actions.size() + 1 + ". " + message);
+        actions.add(Instant.now().toString() + " - " + message);
     }
 
     private static double readDouble(Scanner sc, String message) {
