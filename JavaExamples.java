@@ -49,7 +49,8 @@ public class JavaExamples {
                     case 4: {// Add Two Binary Numbers 
                         int bin1 = readBinaryNumber(sc, "Enter the first binary number: ");
                         int bin2 = readBinaryNumber(sc, "Enter the second binary number: ");
-                        System.out.println("Result (binary): " + (bin1 + bin2));
+                        int sum = bin1 + bin2;
+                        System.out.println("Result (binary): " + Integer.toBinaryString(sum));
                         break;
                     }
                     case 5:{// Add Two Complex Numbers 
