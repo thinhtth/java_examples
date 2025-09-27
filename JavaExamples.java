@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.math.BigInteger;
 
 public class JavaExamples {
 
@@ -15,8 +14,7 @@ public class JavaExamples {
                 System.out.println("5.Add Two Complex Numbers");
                 System.out.println("6.multiply Two Numbers");
                 System.out.println("7.Check Leap Year");
-                System.out.print("please choose what you want:");
-                int choice = readInt(sc);
+                int choice = readInt(sc, "please choose what you want:");
 
                 switch (choice) {
                     case 0:
@@ -72,10 +70,8 @@ public class JavaExamples {
                         break;
                     }
                     case 6:{ // Multiply Two Numbers 
-                        System.out.print("Enter the first numbers:");
-                        int m1 = readInt(sc);
-                        System.out.print("Enter the second numbers:");
-                        int m2 = readInt(sc);
+                        int m1 = readInt(sc, "Enter the first numbers:");
+                        int m2 = readInt(sc, "Enter the second numbers:");
                         int X  = m1 * m2;
                         System.out.println(" X = " + X + "\n " );
                         break;    
